@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top bg-1">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#T1">Trick 1</a></li>
+        <li><a href="#T2">Trick 2</a></li>
+        <li><a href="#T3">Trick 3</a></li>  
+        <li><a href="#D1">Dynamic HTML</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="row">
+    <div class="container-fluid bg-3 text-center">
+        <h2 id="T1">Trick No.1</h2>
+        <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
+        <code>div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: width 2s;
+              }
+        
+              div:hover {
+                width: 300px;
+              }
+        </code>
+        <div class="tes-aaa"></div>
+        <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">Check out the w3schools article!</a>
+    </div>    
+
+    <div class="container-fluid bg-3 text-center">
+        <h2 id="T2">Trick No.2</h2>
+        <p>CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+        <code>div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+          }
+          
+          @keyframes example {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;}
+          }
+        </code>
+        <div class="anim"></div>
+        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">Check out the w3schools article!</a>
+    </div> 
+
+    <div class="container-fluid bg-3 text-center">
+        <h2 id="T3">Trick No.3</h2>
+        <p>The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</p>
+        <code>div {
+            transform: rotate(20deg);
+          }
+        </code>
+        <div class="rotate"></div>
+        <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">Check out the w3schools article!</a>
+    </div> 
+</div>
+
+<div class="container-fluid bg-2 text-center" id="D1">
+    <h3 class="margin">Dynamic HTML</h3>
+    <form>
+        <p>Choose area size: <div class="colour"><input name="size" type="number" min="2" max="10" step="2"></p>
+        <input type="button" onclick="area(size.value);" value="Generate area"> </div>
+    </form>
+</div>
+
+<script>
+    function area(n){
+        let p = document.createElement("P");
+        p.innerHTML = "Here will be the area with " + n + " squares";
+        document.getElementById("D1").appendChild(p); 
+    }
+</script>
+
+</body>
+</html>

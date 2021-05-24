@@ -1,0 +1,96 @@
+
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+
+  .colour {
+    color: #444444;
+  }
+
+  .colour2 {
+    color: #dadada;
+  }
+
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #b5d5ff; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  .tes-aaa {
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    background: rgb(49, 238, 191);
+    transition: width 2s;
+    margin: auto;
+  }
+
+  .tes-aaa:hover {
+    width: 300px;
+  }
+
+  .anim {
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(104, 27, 139);
+    animation-name: example;
+    margin: auto;
+  }
+  
+  @keyframes example {
+    0%   {background-color: rgb(146, 45, 185);}
+    25%  {background-color: rgb(32, 43, 148);}
+    50%  {background-color: rgb(35, 174, 192);}
+    100% {background-color: rgb(49, 214, 49);}
+  }
+
+  .anim:hover {
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+  }
+
+  .rotate {
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    background: rgb(49, 238, 191);
+    transform: rotate(10deg);
+    margin: auto;
+  }
+
+  .rotate:hover {
+    transform: rotate(30deg);
+  }

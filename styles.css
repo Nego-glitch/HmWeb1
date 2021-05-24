@@ -94,3 +94,11 @@
   .rotate:hover {
     transform: rotate(30deg);
   }
+
+   .tb {
+    border: 2px solid rgb(0, 0, 0);
+    width: 15px;
+    margin: auto;
+    background-color: #ffffff;
+    color: #3a3a3a;
+  }

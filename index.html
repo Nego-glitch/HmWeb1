@@ -111,6 +111,7 @@
        //table.style.border = "5px dashed blue";
        //table.style.width = "600px";
        table.classList.add("tb");
+       let num = 0;
        
           for (let x = 0; x < count; x++){
 
@@ -120,7 +121,8 @@
                   
                   let col = document.createElement("td");
                   col.classList.add("tb");
-                  col.innerHTML = "<span>"+ parseInt(x + 1) + ";" + parseInt(y + 1) +"</span>"
+                  //col.innerHTML = "<span>"+ parseInt(x + 1) + ";" + parseInt(y + 1) +"</span>"
+                  col.innerHTML = "<span>"+ parseInt(num + 1) +"</span>"
                   row.appendChild(col);
             }
 

@@ -111,18 +111,20 @@
        //table.style.border = "5px dashed blue";
        //table.style.width = "600px";
        table.classList.add("tb");
-
+       let num = 0;
+       let ber = 0;
        
           for (let x = 0; x < count; x++){
 
             let row = document.createElement("tr");
+            row.innerHTML = "<span>"+ num + 1 +"</span>"
 
             for (let y = 0; y < count; y++){
                   
                   let col = document.createElement("td");
-                  let num = 0;
+                  
                   col.classList.add("tb");
-                  col.innerHTML = "<span>"+ num + 1 +"</span>"
+                  col.innerHTML = "<span>"+ ber + 1 +"</span>"
                   row.appendChild(col);
             }
 
